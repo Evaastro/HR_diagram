@@ -1,10 +1,7 @@
 numpy 
-matplotlib.pyplot
-astroquery.gaia
+matplotlib
+astroquery
 pandas
-astropy.coordinates
-astropy.units
+astropy
 dustmaps
-dustmaps.config
-dustmaps.gaia_tge
-dust_extinction.parameter_averages
+dust_extinction
