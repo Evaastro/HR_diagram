@@ -1,0 +1,10 @@
+numpy 
+matplotlib.pyplot
+astroquery.gaia
+pandas
+astropy.coordinates
+astropy.units
+dustmaps
+dustmaps.config
+dustmaps.gaia_tge
+dust_extinction.parameter_averages
