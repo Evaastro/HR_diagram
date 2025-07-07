@@ -40,7 +40,7 @@ You can install the required dependencies using:
 python3 -m pip install -r requirements.txt
 ```
 
-> ⚠️ Some difficulties may be encountered when installing `dustmaps`. Please refer to the [official installation instructions](https://dustmaps.readthedocs.io/en/latest/installation.html).\
+> ⚠️ Some difficulties may be encountered when installing `dustmaps`. Please refer to the [official installation instructions](https://dustmaps.readthedocs.io/en/latest/installation.html).
 
 ## License
 
