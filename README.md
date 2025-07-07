@@ -1,11 +1,11 @@
 # Hertzsprung-Russell diagram
 
-This repository contains code allowing reproducibility of a observational Hertzsprung-Russell diagram (HR diagram) using the data of Gaia data release 2.
-You can also use the code to place a star on this HR diagram with the position of the star in equatorial coordinated. 
+This repository contains code allowing reproducibility of a observational Hertzsprung-Russell diagram (HR diagram) using the data of Gaia data release 2 (DR2).
+You can also use the code to place a star (Gaia DR3) on this HR diagram with the position of the star in equatorial coordinated. 
 
 # Gaia query 
 
-You need to do a Gaia query on https://gea.esac.esa.int/archive/ to get results_gaia.csv file. 
+You need to do a Gaia query on [Gaia archive](https://gea.esac.esa.int/archive/) to construct results_gaia.csv file. 
 ```
 SELECT TOP 1000000
 parallax, bp_rp, phot_g_mean_mag,phot_bp_mean_mag,phot_rp_mean_mag,a_g_val, ra, dec
@@ -21,6 +21,7 @@ AND phot_bp_rp_excess_factor < 1.3+0.06*power(phot_bp_mean_mag-phot_rp_mean_mag,
 AND 1000/parallax <= 200
 ORDER BY random_index
 ```
+A new version of this file will be provided from Gaia DR3. 
 
 # Installation 
 
