@@ -109,7 +109,6 @@ def add_star(ra=256.5229102004,dec=-26.5805651308,radius=1* u.arcsec):
     if np.ma.is_masked(result['parallax'][0]):
         return print("No Gaia distances found !")
     if len(result)>0:
-        for row in result:
         A_G=result['ag_gspphot'][0]
         Ebpminrp=result['ebpminrp_gspphot'][0]
         dist=1000/result['distance_gspphot'][0]
