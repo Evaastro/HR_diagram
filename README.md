@@ -24,7 +24,7 @@ WHERE visibility_periods_used > 8
   AND 1000 / parallax <= 200
 ORDER BY random_index
 ```
-
+After running the code HR_function.py and the function HR_plot(), you will have ![Example HR Diagram](HR_empty.png)
 A new version of this file can be generated using Gaia DR3.
 
 ---
