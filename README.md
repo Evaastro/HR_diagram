@@ -24,7 +24,7 @@ WHERE visibility_periods_used > 8
   AND 1000 / parallax <= 200
 ORDER BY random_index
 ```
-Do not forget to download the data in the format csv when generating the data.
+Do not forget to download the data in the format csv when generating the data. The format by default of the Gaia query is VOTable. It can be changed before downloading of the data.
 
 A new version of this file can be generated using Gaia DR3.
 
@@ -59,6 +59,10 @@ It contains four functions:
 ### 1. Run the script
 
 Start by changing the line 44 of the HR_function.py by the path to your data file you generated. 
+
+```python
+chemin="results_gaia.csv"
+```
 
 Importing the functions:
 
