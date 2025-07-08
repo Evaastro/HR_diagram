@@ -24,6 +24,8 @@ WHERE visibility_periods_used > 8
   AND 1000 / parallax <= 200
 ORDER BY random_index
 ```
+Do not forget to download the data in the format csv when generating the data.
+
 After running the code HR_function.py and the function HR_plot(), you will have Example HR Diagram.
 
 <img src="/HR_empty.png" alt="Example HR Diagram" width="250"/>
@@ -40,7 +42,56 @@ You can install the required dependencies using:
 python3 -m pip install -r requirements.txt
 ```
 
-> ⚠️ Some difficulties may be encountered when installing `dustmaps`. Please refer to the [official installation instructions](https://dustmaps.readthedocs.io/en/latest/installation.html).
+This project also requires the `dustmaps` module, and especially the **Gaia TGE** map from  
+[Delchambre et al. (2022)](https://doi.org/10.1051/0004-6361/202243423).
+
+> ⚠️ The installation of `dustmaps` is not always simple.  
+Please follow the official documentation:  
+[https://dustmaps.readthedocs.io/en/latest/installation.html](https://dustmaps.readthedocs.io/en/latest/installation.html)
+
+
+## How to Use the Code (Step-by-Step)
+
+The main code is in `HR_function.py`.  
+It contains four functions:
+
+- `mag_abs()` Computes the absolute magnitude.
+- `Absorption()` Computes interstellar absorption depending on wavelength.
+- `HR_plot()` Plots the HR diagram.
+- `add_star(ra=..., dec=...)` Adds a star from Gaia DR3 using coordinates.
+
+### 1. Run the script
+
+Start by changing the line 44 of the HR_function.py by the path to your data file you generated. 
+
+Importing the functions:
+
+```python
+from HR_function import HR_plot, add_star
+```
+
+### 2. Plot the HR Diagram
+
+Run:
+
+```python
+HR_plot()
+```
+
+This will display and save the HR diagram.
+
+📷 Example:
+<img src="/HR_empty.png" alt="Example HR Diagram" width="300"/>
+
+### 3. Add a Star (Optional)
+
+To add a specific star from Gaia DR3, use:
+
+```python
+add_star(ra=56.75, dec=-23.44)
+```
+
+Replace the values with your star's coordinates.
 
 ## License
 
