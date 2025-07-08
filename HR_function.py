@@ -91,7 +91,7 @@ def HR_plot(path=chemin,only_HR=True):
         plt.show()
 
 
-def add_star(ra=256.5229102004,dec=-26.5805651308,radius=1* u.arcsec):
+def add_star(ra=76.85812,dec=53.69585,radius=1* u.arcsec):
     """
     On the Hertzsprung-Russell diagram is the addition of the stars
 
