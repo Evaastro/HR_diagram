@@ -26,10 +26,6 @@ ORDER BY random_index
 ```
 Do not forget to download the data in the format csv when generating the data.
 
-After running the code HR_function.py and the function HR_plot(), you will have Example HR Diagram.
-
-<img src="/HR_empty.png" alt="Example HR Diagram" width="250"/>
-
 A new version of this file can be generated using Gaia DR3.
 
 ---
