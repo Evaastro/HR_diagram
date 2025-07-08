@@ -91,6 +91,10 @@ To add a specific star from Gaia DR3, use:
 add_star(ra=76.85812, dec=53.69585)
 ```
 
+📷 Example:
+
+<img src="/add_star_exemple.png" alt="Example star HR Diagram" width="300"/>
+
 Replace the values with your star's coordinates.
 
 ## License
