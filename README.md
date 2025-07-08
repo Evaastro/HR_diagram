@@ -79,8 +79,8 @@ HR_plot()
 ```
 
 This will display and save the HR diagram.
-
 📷 Example:
+
 <img src="/HR_empty.png" alt="Example HR Diagram" width="300"/>
 
 ### 3. Add a Star (Optional)
@@ -88,7 +88,7 @@ This will display and save the HR diagram.
 To add a specific star from Gaia DR3, use:
 
 ```python
-add_star(ra=56.75, dec=-23.44)
+add_star(ra=76.85812, dec=53.69585)
 ```
 
 Replace the values with your star's coordinates.
