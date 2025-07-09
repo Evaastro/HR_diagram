@@ -39,7 +39,7 @@ Get a local copy of the code with:
 git clone https://github.com/Evaastro/HR_diagram.git
 ```
 
-and then place yourself into the FastFrames directory:
+and then place yourself into the HR_diagram directory:
 ```
 cd HR_diagram
 ```
