@@ -13,8 +13,9 @@ from astropy.coordinates import SkyCoord
 import astropy.units as u
 import dustmaps
 from dustmaps.config import config
-import dustmaps.gaia_tge
 from dust_extinction.parameter_averages import G23
+import dustmaps.bayestar
+from dustmaps.bayestar import BayestarQuery
 
 
 plt.rcParams.update({
@@ -65,8 +66,8 @@ def Absorption(lam, coord):
     Returns:
         float: interstellar absorption in function of lambda
     """
-    gaia_tge=dustmaps.gaia_tge.GaiaTGEQuery()
-    E_BV=gaia_tge(coord)
+    dust_maps=dustmaps.bayestar.BayestarQuery()
+    E_BV=dust_maps(coord)
     ext_model=G23(Rv=3.1)
     return ext_model(lam * u.AA) * E_BV
 
