@@ -134,5 +134,3 @@ def add_star(ra=76.85812,dec=53.69585,radius=1* u.arcsec):
     else:
         print("No Gaia object it is found at theses coordinates.")
     plt.show()
-
-print("\nProgramme terminer : HR function \n")
