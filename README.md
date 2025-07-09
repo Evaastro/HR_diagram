@@ -41,7 +41,7 @@ python3 -m pip install -r requirements.txt
 This project also requires the `dustmaps` module, and especially the **Gaia TGE** map from  
 [Delchambre et al. (2022)](https://doi.org/10.1051/0004-6361/202243423).
 
-> ⚠️ The installation of `dustmaps` is not always simple.  
+ ⚠️ The installation of `dustmaps` is not always simple.  
 Please follow the official documentation:  
 [https://dustmaps.readthedocs.io/en/latest/installation.html](https://dustmaps.readthedocs.io/en/latest/installation.html)
 
