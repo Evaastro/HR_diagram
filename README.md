@@ -32,6 +32,18 @@ A new version of this file can be generated using Gaia DR3.
 
 ## Installation
 
+To install this version of HR_diagram, you should follow these steps:
+
+Get a local copy of the code with:
+```
+git clone https://github.com/Evaastro/HR_diagram.git
+```
+
+and then place yourself into the FastFrames directory:
+```
+cd HR_diagram
+```
+
 You can install the required dependencies using:
 
 ```bash
@@ -48,7 +60,7 @@ Please follow the official documentation:
 
 ## How to Use the Code (Step-by-Step)
 
-The main code is in `HR_function.py`.  
+The main code is `HR_function.py`.  
 It contains four functions:
 
 - `mag_abs()` Computes the absolute magnitude.
@@ -64,7 +76,7 @@ Start by changing the line 44 of the HR_function.py by the path to your data fil
 chemin="results_gaia.csv"
 ```
 
-Importing the functions:
+Import the functions:
 
 ```python
 from HR_function import HR_plot, add_star
