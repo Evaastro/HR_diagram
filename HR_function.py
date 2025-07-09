@@ -115,7 +115,7 @@ def add_star(ra=76.85812,dec=53.69585,radius=1* u.arcsec):
         if np.ma.is_masked(dist):
             dist=result['parallax'][0]
         coord=SkyCoord(ra=ra, dec=dec, unit=(u.degree, u.degree),\
-                       distance=1/dist*u.pc, frame='icrs')
+                       distance=1000/dist*u.pc, frame='icrs')
         if np.ma.is_masked(A_G):
             lambda_G=5850.88 #G band
             A_G=Absorption(lambda_G, coord)
