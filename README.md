@@ -50,8 +50,8 @@ You can install the required dependencies using:
 python3 -m pip install -r requirements.txt
 ```
 
-This project also requires the `dustmaps` module, and especially the **Gaia TGE** map from  
-[Delchambre et al. (2022)](https://doi.org/10.1051/0004-6361/202243423).
+This project also requires the `dustmaps` module, and especially the **Bayestar19** map from  
+[Green 2018](10.1093/mnras/sty1008).
 
  ⚠️ The installation of `dustmaps` is not always simple.  
 Please follow the official documentation:  
