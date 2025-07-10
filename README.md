@@ -50,7 +50,7 @@ You can install the required dependencies using:
 python3 -m pip install -r requirements.txt
 ```
 
-This project also requires the `dustmaps` module, and especially the **Bayestar19** map from  
+This project also requires the `dustmaps` module, and especially the **bayestar** map from  
 [Green 2018](10.1093/mnras/sty1008).
 
  ⚠️ The installation of `dustmaps` is not always simple.  
