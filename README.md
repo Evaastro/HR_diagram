@@ -27,6 +27,31 @@ ORDER BY random_index
 Do not forget to download the data in the format csv when generating the data. The format by default of the Gaia query is VOTable. It can be changed before downloading of the data.
 
 A new version of this file can be generated using Gaia DR3.
+The new version with Gaia DR3:
+```sql
+SELECT TOP 1000000
+source_id,
+  ra, dec,
+  parallax, parallax_error,
+  phot_g_mean_mag, phot_bp_mean_mag, phot_rp_mean_mag,
+  bp_rp,
+  radial_velocity,
+  astrometric_excess_noise,
+  astrometric_chi2_al,
+  astrometric_n_good_obs_al,
+  visibility_periods_used
+FROM gaiadr3.gaia_source
+WHERE visibility_periods_used>8
+AND astrometric_chi2_al/(astrometric_n_good_obs_al-5)<1.44*greatest(1,exp(-0.4*(phot_g_mean_mag-19.5)))
+AND parallax_over_error>10
+AND phot_g_mean_flux_over_error>50
+AND phot_rp_mean_flux_over_error>20
+AND phot_bp_mean_flux_over_error>20
+AND phot_bp_rp_excess_factor > 1.0+0.015*power(phot_bp_mean_mag-phot_rp_mean_mag,2)
+AND phot_bp_rp_excess_factor < 1.3+0.06*power(phot_bp_mean_mag-phot_rp_mean_mag,2)
+AND 1000/parallax <= 200
+ORDER BY random_index
+```
 
 ---
 
@@ -90,7 +115,7 @@ Run:
 HR_plot()
 ```
 
-This will display and save the HR diagram.
+This will display and save the HR diagram (with Gaia DR2 data).
 📷 Example:
 
 <img src="/HR_empty.png" alt="Example HR Diagram" width="300"/>
