@@ -111,9 +111,6 @@ def add_star(ra=76.85812,dec=53.69585,radius=1* u.arcsec):
             A_RP=Absorption(lambda_RP, coord)
             Ebpminrp=A_BP-A_RP
         color=result['bp_rp'][0]-Ebpminrp
-        mag_g_GSP=mag_abs(result['phot_g_mean_mag'][0],1000/result['distance_gspphot'][0],A_G)
-        mag_g_gaia=mag_abs(result['phot_g_mean_mag'][0],result['parallax'][0],A_G)
-        mag_gz=mag_abs(result['phot_g_mean_mag'][0],result['parallax'][0],0)
         mag_g=mag_abs(result['phot_g_mean_mag'][0],dist,A_G)
         plt.scatter(color, mag_g, marker='*', s=500,color='#3FE93F',edgecolor='black', linewidth=0.7)
     else:
